@@ -1,0 +1,40 @@
+@mixin btn($color){
+    width: 100%;
+    border: 1px solid $color;
+    border-radius: 5px;
+    color: $color;
+    padding: 8px 0;
+    font-size: 12px;
+    @include font(900);
+    text-align: center;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+@mixin activeBtn($color){
+    @include btn($color);
+    background-color: $color;
+    color: white;
+}
+
+@mixin font($size){
+    font-family: 'Montserrat';
+    font-weight: $size;
+}
+@mixin cover($height){
+    position: relative;
+    width: 100%;
+    padding-top: $height;
+}
+@mixin backIMG($source){
+    background: $source 100% 100% no-repeat;
+    background-size: cover;
+    background-color: $black;
+    transition: 1s;
+    cursor: pointer;
+
+    &:hover{
+        background: $main;
+        transition: 1s;
+    }
+}

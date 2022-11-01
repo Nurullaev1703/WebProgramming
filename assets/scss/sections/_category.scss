@@ -1,0 +1,52 @@
+.category{
+    .wrapper{
+        width: 60%;
+    }
+    .container{
+        .item{
+            width: 32%;
+            color: $white;
+            text-transform: uppercase;
+
+            .cover-container{
+                background-color: rgba($color: #000000, $alpha: 0.5);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height:100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .first{
+                @include backIMG(url('../img/category/clothes.jpg'));
+            }
+            .second{
+                @include backIMG(url('../img/category/accessories.jpg'));
+            }
+            .third{
+                @include backIMG(url('../img/category/man.jpg')); 
+            }
+            .fourth{
+                @include backIMG(url('../img/category/woman.jpg'));
+            }
+            .fifth{
+                @include backIMG(url('../img/category/sneaker.jpg'));
+            }
+        }
+
+        &:first-child{
+            .item{
+                margin-bottom: 2%;
+                &:first-child{
+                    width: 66%;
+
+                    .cover{
+                        padding-top: 48.6%;
+                    }
+                }
+            }
+        }
+    }
+}

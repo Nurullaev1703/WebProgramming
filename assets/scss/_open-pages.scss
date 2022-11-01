@@ -1,0 +1,7 @@
+.fullpage{
+    display: none;
+
+    &.open{
+        display: inline;
+    }
+}

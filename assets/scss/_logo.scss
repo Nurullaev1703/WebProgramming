@@ -1,0 +1,14 @@
+.logo{
+    @include font(700);
+    text-transform: uppercase;
+    display: flex;
+    align-items: baseline;
+}
+.ellipse{
+    &.active{
+        width: 5px;
+        height: 5px;
+        background-color: $main;
+        border-radius: 100%;
+    }
+}
