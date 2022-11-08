@@ -1,0 +1,112 @@
+.basket {
+    border: 1px solid $stroke;
+
+    .counter {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        margin: 0;
+        border: 1px solid $stroke;
+        border-radius: 4px;
+
+        .item{
+            padding: 4px 0;
+            font-size: 18px;
+            &.count{
+                padding: 0px 10px;
+                transition: 0.4s;
+                &:hover{
+                    cursor: pointer;
+                    background-color: $main;
+                    transition: 0.4s;
+                }
+                &:first-child{
+                    border-radius: 4px 0 0 4px;
+                }
+                &:last-child{
+                    border-radius: 0px 4px 4px 0;
+                }
+            }
+            
+        }
+    }
+
+    &-card {
+        display: flex;
+        padding: 20px 0;
+
+        .card-item {
+            &:first-child {
+                width: 50%;
+            }
+            &:nth-child(2) {
+                width: 10%;
+            }
+            &:nth-child(3) {
+                width: 20%;
+            }
+            &:nth-child(4) {
+                width: 10%;
+            }
+            &:last-child {
+                width: 10%;
+            }
+        }
+
+        &.title {
+            border-bottom: 1px solid $stroke;
+            .card-item:first-child {
+                text-align: center;
+            }
+        }
+        
+        &.content {
+            align-items: center;
+            .card-item {
+                &:first-child {
+                    display: flex;
+                    align-items: center;
+                }
+                &:last-child {
+                    cursor: pointer;
+                    transition: 0.4s;
+
+                    &:hover {
+                        color: $main;
+                        transition: 0.4s;
+                    }
+                }
+                &-cover {
+                    width: 15%;
+                    background-color: $stroke;
+                    padding: 20px 0;
+                    margin-left: 20px;
+                }
+                &-desc {
+                    margin-left: 20px;
+
+                    .ellipse-container {
+                        margin-right: 5px;
+                        .ellipse{
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 100%;
+                            transition: 0.2s;
+                            cursor: pointer;
+                        &.black{
+                            background-color: $black;
+                        }
+                    }
+                    }
+
+                    .desc {
+                        margin-top: 15px;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+

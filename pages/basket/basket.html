@@ -1,0 +1,91 @@
+<section class="page-title">
+    <h1>Basket</h1>
+        <div class="page-title-container">
+            <a href="#">Home</a>
+            <span>/</span>
+            <a href="#">Shopping Cart</a>
+        </div>
+</section>
+
+<div class="wrapper">
+    <section class="basket">
+        <div class="basket-card title">
+            <div class="card-item">
+                <p>Product</p>
+            </div>
+            <div class="card-item">
+                <p>Price</p>
+            </div>
+            <div class="card-item">
+                <p>Quantity</p>
+            </div>
+            <div class="card-item">
+                <p>Total</p>
+            </div>
+            <div class="card-item"></div>
+        </div>
+        <div class="content">
+            <div class="basket-card content">
+                <div class="card-item">
+                    <div class="card-item-cover">
+                        <div class="cover">
+                            <img src="../assets/img/t-shirt.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card-item-desc">
+                        <p>Red T-Shirt</p>
+                        <div class="desc">
+                            <div class="ellipse-container">
+                                <div class="ellipse black"></div>
+                            </div>
+                            <p>M</p>
+                        </div>                            
+                    </div>                       
+                </div>
+                <div class="card-item">
+                    <h3>$45</h3>
+                </div>
+                <div class="card-item">
+                    <div class="counter">
+                        <input class="item count" onclick="changeCountProduct('minus')" type="button" value="-">
+                        <p id="productCount" class="item">1</p>
+                        <input class="item count" onclick="changeCountProduct('plus')" type="button" value="+">
+                    </div>
+                </div>
+                <div class="card-item">
+                    <h3>$45</h3>
+                </div>
+                <div class="card-item">
+                    <div>
+                        <h3>x</h3>
+                    </div>
+                </div>
+            </div>                
+        </div>
+    </section> 
+
+    <section class="total">
+        <div class="total-container">
+            <div class="card">
+                <h1>Basket Total</h1>
+                <div class="container">
+                    <p>Subtotal</p>
+                    <p>$45</p>
+                </div>
+                <div class="container">
+                    <p>Shiping</p>
+                    <p>Free Shiping</p>
+                </div>
+                <div class="container total">
+                    <p>Total</p>
+                    <p>$45</p>
+                </div>
+            </div>
+            <!-- <input type="button" class="btn" value="Оплатить"> -->
+            <a onclick="navigation('pay')" class="pay-btn">
+                <h3 class="btn">Оплатить</h3>
+            </a>
+        </div>
+        
+    </section>
+</div>

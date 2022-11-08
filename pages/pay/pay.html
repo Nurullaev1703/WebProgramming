@@ -1,0 +1,95 @@
+<section class="page-title">
+    <h1>Pay</h1>
+        <div class="page-title-container">
+            <a href="#">Home</a>
+            <span>/</span>
+            <a href="#">Pay Cart</a>
+        </div>
+</section>
+
+<div class="wrapper">
+    <form class="order">
+        <h1>Детали заказа</h1>
+        <div class="form-container">
+            <label for="name">
+                <h3>Имя</h3>
+                <input onkeypress="keyPress(this)" type="text" id="name">
+            </label>
+
+            <label for="surname">
+                <h3>Фамилия</h3>
+                <input type="text" id="surname">
+            </label>
+            
+            <div class="container location">
+                <label for="country">
+                    <h3>Страна</h3>
+                    <input type="text" id="country">
+                </label>
+                <label for="city">
+                    <h3>Город</h3>
+                    <input type="text" id="city">
+                </label>
+                <label for="street">
+                    <h3>Адрес (ул / кв)</h3>
+                    <input type="text" id="street">
+                </label>
+            </div>
+        </div>
+    </form>
+
+    <section class="pay">
+        <div class="container">
+            <div class="pay-container total">
+                <div class="card">
+                    <h1>Basket Total</h1>
+                    <div class="container">
+                        <p>Subtotal</p>
+                        <p>$45</p>
+                    </div>
+                    <div class="container">
+                        <p>Shiping</p>
+                        <p>Free Shiping</p>
+                    </div>
+                    <div class="container">
+                        <p>Total</p>
+                        <p>$45</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pay-container total">
+                <div class="card">
+                    <h1>Payment</h1>
+                    <label for="visa">
+                        <input type="checkbox" onchange="changeCheckbox(this)" name="visa" id="visa" hidden>
+                        <div class="checkbox">
+                            <div class="ellipse"></div>
+                        </div>
+                        <h4>Visa</h4>
+                    </label>
+                    <label for="master">
+                        <input type="checkbox" onchange="changeCheckbox(this)" name="master" id="master"hidden>
+                        <div class="checkbox">
+                            <div class="ellipse"></div>
+                        </div>
+                        <h4>MasterCard</h4>
+                    </label>
+                    <label for="paypal">
+                        <input type="checkbox" onchange="changeCheckbox(this)" name="paypal" id="paypal" hidden>
+                        <div class="checkbox">
+                            <div class="ellipse"></div>
+                        </div>
+                        <h4>PayPal</h4>
+                    </label>
+                </div>
+                <!-- <input type="button" class="btn" value="Оплатить"> -->
+                <div class="pay-container-btn">
+                    <a href="../pay.html" class="pay-btn">
+                        <h3 class="btn">Оплатить</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</div>

@@ -37,7 +37,6 @@ ul {
 
 li {
   margin: 0;
-  padding: 0;
 }
 
 .btn, input[type=button] {
@@ -237,6 +236,28 @@ section {
   margin-bottom: 80px;
 }
 
+input[type=text], input[type=password], .select {
+  margin-left: -11px;
+  width: 100%;
+  border: 1px solid #E3E3E3;
+  border-radius: 6px;
+  padding: 7px 11px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 10px;
+}
+
+.select {
+  cursor: pointer;
+}
+.select.active {
+  color: #202020;
+}
+
+.form-container {
+  margin: 0 11px;
+}
+
 .cover {
   position: relative;
   width: 100%;
@@ -323,6 +344,7 @@ header .container .navigate .nav-links {
   border-right: 1px solid #E3E3E3;
 }
 header .container .navigate .nav-links a {
+  cursor: pointer;
   text-transform: uppercase;
   margin-right: 20px;
 }
@@ -513,6 +535,7 @@ header .container .navigate .nav-links a {
 .cards h1 {
   text-align: center;
   margin-bottom: 30px;
+  color: #202020;
 }
 .cards h1.title {
   text-align: left;
@@ -627,6 +650,61 @@ footer .the-end p {
 }
 .fullpage.open {
   display: inline;
+}
+
+.page-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FF3D00;
+  padding: 30px 0;
+  text-transform: uppercase;
+}
+.page-title a:hover {
+  color: #ffffff;
+}
+.page-title-container {
+  margin-top: 10px;
+  display: flex;
+}
+.page-title span {
+  margin: 0 10px;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+}
+.total-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 30%;
+}
+.total .pay-btn {
+  margin-top: 25px;
+  width: 40%;
+}
+.total .card {
+  width: 100%;
+  padding: 20px;
+}
+.total .card h1 {
+  margin-bottom: 20px;
+}
+.total .card .container {
+  margin-bottom: 20px;
+}
+.total .card .container:last-child {
+  margin-bottom: 0;
+  padding-top: 20px;
+  border-top: 1px solid #E3E3E3;
+}
+.total .pay-container-btn {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .product-title {
@@ -804,6 +882,218 @@ footer .the-end p {
 .descriptions .descriptions-container .content .tab-content.active {
   margin-top: 20px;
   display: block;
+}
+
+form.order {
+  margin-bottom: 80px;
+}
+form.order label input {
+  margin-bottom: 30px;
+}
+form.order h3 {
+  margin-left: -8px;
+}
+form.order .location label {
+  width: 30%;
+}
+
+.pay-container {
+  width: 40%;
+  flex-direction: column;
+}
+.pay-container label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.pay .container {
+  align-items: flex-start;
+}
+.pay .total .card {
+  width: auto;
+  min-height: 190px;
+}
+
+.basket {
+  border: 1px solid #E3E3E3;
+}
+.basket .counter {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin: 0;
+  border: 1px solid #E3E3E3;
+  border-radius: 4px;
+}
+.basket .counter .item {
+  padding: 4px 0;
+  font-size: 18px;
+}
+.basket .counter .item.count {
+  padding: 0px 10px;
+  transition: 0.4s;
+}
+.basket .counter .item.count:hover {
+  cursor: pointer;
+  background-color: #FF3D00;
+  transition: 0.4s;
+}
+.basket .counter .item.count:first-child {
+  border-radius: 4px 0 0 4px;
+}
+.basket .counter .item.count:last-child {
+  border-radius: 0px 4px 4px 0;
+}
+.basket-card {
+  display: flex;
+  padding: 20px 0;
+}
+.basket-card .card-item:first-child {
+  width: 50%;
+}
+.basket-card .card-item:nth-child(2) {
+  width: 10%;
+}
+.basket-card .card-item:nth-child(3) {
+  width: 20%;
+}
+.basket-card .card-item:nth-child(4) {
+  width: 10%;
+}
+.basket-card .card-item:last-child {
+  width: 10%;
+}
+.basket-card.title {
+  border-bottom: 1px solid #E3E3E3;
+}
+.basket-card.title .card-item:first-child {
+  text-align: center;
+}
+.basket-card.content {
+  align-items: center;
+}
+.basket-card.content .card-item:first-child {
+  display: flex;
+  align-items: center;
+}
+.basket-card.content .card-item:last-child {
+  cursor: pointer;
+  transition: 0.4s;
+}
+.basket-card.content .card-item:last-child:hover {
+  color: #FF3D00;
+  transition: 0.4s;
+}
+.basket-card.content .card-item-cover {
+  width: 15%;
+  background-color: #E3E3E3;
+  padding: 20px 0;
+  margin-left: 20px;
+}
+.basket-card.content .card-item-desc {
+  margin-left: 20px;
+}
+.basket-card.content .card-item-desc .ellipse-container {
+  margin-right: 5px;
+}
+.basket-card.content .card-item-desc .ellipse-container .ellipse {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.basket-card.content .card-item-desc .ellipse-container .ellipse.black {
+  background-color: #202020;
+}
+.basket-card.content .card-item-desc .desc {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.ellipse-container {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ellipse-container .ellipse {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #0085FF;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.ellipse-container .ellipse.active {
+  transition: 0.4s;
+  width: 10px;
+  height: 10px;
+  border: 5px solid #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+.ellipse-container .ellipse.black {
+  background-color: #202020;
+}
+.ellipse-container .ellipse.pink {
+  background-color: #ef5ad8;
+}
+.ellipse-container .ellipse.main {
+  background-color: #FF3D00;
+  padding: 0;
+}
+.ellipse-container .ellipse.second {
+  background-color: #0085FF;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #FF3D00;
+  margin-right: 15px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.checkbox.active {
+  background-color: #FF3D00;
+  transition: 0.4s;
+}
+.checkbox.active .ellipse {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #ffffff;
+}
+
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login form {
+  display: none;
+}
+.login form.open {
+  display: block;
+}
+
+.auth {
+  width: 30%;
+  margin: 0 auto;
+}
+.auth .btn {
+  padding: 10px 0;
+}
+.auth p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
