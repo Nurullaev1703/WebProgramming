@@ -1084,15 +1084,14 @@ form.order .location label {
 .login form.open {
   display: block;
 }
-
-.auth {
+.login .auth {
   width: 30%;
   margin: 0 auto;
 }
-.auth .btn {
+.login .btn {
   padding: 10px 0;
 }
-.auth p {
+.login p {
   text-align: center;
 }
 

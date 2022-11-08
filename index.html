@@ -8,5 +8,50 @@
     <title>Geron</title>
 </head>
 <body>
+    <div class="login">
+        <div class="auth open">
+            <form id="auth">
+                <h1>Авторизация</h1>
+                <div class="form-container">
+                    <label for="">
+                        <h4>E-mail</h4>
+                        <input type="text" name="email" id="">
+                    </label>
+                    <label for="">
+                        <h4>Phone</h4>
+                        <input type="text" name="phone" id="">
+                    </label>
+                    <label for="">
+                        <h4>Password</h4>
+                        <input type="password" name="password" id="">
+                    </label>
+                </div>
+                <input type="button" onclick="login()" value="Войти" class="btn">
+                <a href="#"><p>Регистрация</p></a>
+            </form>
+
+            <form id="reg">
+                <h1>Регистрация</h1>
+                <div class="form-container">
+                    <label for="">
+                        <h4>E-mail</h4>
+                        <input type="text" name="emailReg" id="">
+                    </label>
+                    <label for="">
+                        <h4>Phone</h4>
+                        <input type="text" name="phoneReg" id="">
+                    </label>
+                    <label for="">
+                        <h4>Password</h4>
+                        <input type="password" name="passwordReg" id="">
+                    </label>
+                </div>
+                <input type="button" onclick="reg()" value="Зарегистрироваться" class="btn">
+                <a href="#"><p>Авторизоваться</p></a>
+            </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./assets/js/auth.js"></script>
 </body>
 </html>

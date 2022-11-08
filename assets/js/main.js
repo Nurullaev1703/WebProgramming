@@ -47,11 +47,7 @@ const changeCountProduct = (type)=>{
     productCount.innerHTML = productValue;
 
 }
-
-const keyPress = (e) => {
-    console.log(e.value);
-}
-const setCheckbox = (data) =>{
+const setCheckbox = (e) =>{
     e.forEach(item =>{
         if(item.checked){
             item.parentNode.querySelector('.checkbox').classList.add('active');

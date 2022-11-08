@@ -253,30 +253,27 @@ svg{
     }
 }
 
-.login {
+.login{
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    form {
+    form{
         display: none;
-
-        &.open {
+        &.open{
             display: block;
         }
     }
-}
-.auth {
-    width: 30%;
-    margin: 0 auto;
-
-    .btn {
+    .auth{
+        width: 30%;
+        margin: 0 auto;
+    }
+    .btn{
         padding: 10px 0;
     }
-
-    p {
-        text-align: center
+    p{
+        text-align: center;
     }
 }
