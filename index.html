@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="login">
-        <div class="auth open">
+        <div class="auth">
             <form id="auth">
                 <h1>Авторизация</h1>
                 <div class="form-container">
@@ -27,10 +27,10 @@
                     </label>
                 </div>
                 <input type="button" onclick="login()" value="Войти" class="btn">
-                <a href="#"><p>Регистрация</p></a>
+                <a onclick="navigate(this)"><p>Регистрация</p></a>
             </form>
 
-            <form id="reg">
+            <form id="reg" class="open">
                 <h1>Регистрация</h1>
                 <div class="form-container">
                     <label for="">
@@ -47,7 +47,7 @@
                     </label>
                 </div>
                 <input type="button" onclick="reg()" value="Зарегистрироваться" class="btn">
-                <a href="#"><p>Авторизоваться</p></a>
+                <a onclick="navigate(this)"><p>Авторизоваться</p></a>
             </form>
         </div>
     </div>

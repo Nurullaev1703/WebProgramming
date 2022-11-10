@@ -46,27 +46,33 @@
                     </div>
                     <p class="description">Кстати, представители современных социальных резервов в равной степени предоставлены сами себе. Прежде всего, социально-экономическое развитие позволяет выполнить важные задания по разработке дальнейших направлений развития!</p>
                     <div class="container detail">
-                        <div class="characteristics size">
+                        <div class="characteristics">
                             <h3>Size:</h3>
                             <div class="size-list-pick">
-                                <p class="size">XS</p>
-                                <p class="size active">M</p>
-                                <p class="size">XL</p>
+                                <div class="size-container">
+                                    <p class="size" onclick="pickSize(this)">XS</p>
+                                </div>
+                                <div class="size-container">
+                                    <p class="size" onclick="pickSize(this)">M</p>
+                                </div>
+                                <div class="size-container">
+                                    <p class="size" onclick="pickSize(this)">XL</p>
+                                </div>
                             </div>
                         </div>
                         <div class="characteristics color">
                             <h3>Color:</h3>
                             <div class="ellipse-container">
-                                <div class="ellipse pick black"></div>
+                                <div class="ellipse black" onclick="pickColor(this)"></div>
                             </div>
                             <div class="ellipse-container">
-                                <div class="ellipse blue"></div>
+                                <div class="ellipse blue" onclick="pickColor(this)"></div>
                             </div>
                             <div class="ellipse-container">
-                                <div class="ellipse pink"></div>
+                                <div class="ellipse pink" onclick="pickColor(this)"></div>
                             </div>
                             <div class="ellipse-container">
-                                <div class="ellipse orange"></div>
+                                <div class="ellipse orange" onclick="pickColor(this)"></div>
                             </div>
                         </div>
                     </div>
