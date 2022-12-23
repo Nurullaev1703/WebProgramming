@@ -1,0 +1,44 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-container{
+        padding: 20px 10px;
+        border-radius: 10px;
+        width: 30%;
+        background-color: $white;
+
+        h1{
+            margin-bottom: 20px;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+
+        .btn, input[type="button"]{
+            padding: 10px 0;
+            width: 48%;
+
+            &:hover{
+                width: 48%;
+            }
+        }
+        .modal-close{
+            height: fit-content;
+            cursor: pointer;
+
+            &:hover{
+                color: $main;
+                transition: 0.4s;
+            }
+        }
+    }
+}

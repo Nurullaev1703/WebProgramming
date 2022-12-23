@@ -65,6 +65,14 @@ input[type="text"]:placeholder-shown, input[type="password"]:placeholder-shown, 
             color: $second;
         }
     }
+    &.close{
+        @include btn($placeholder);
+
+        &:hover{
+            @include activeBtn($placeholder);
+            color: $white;
+        }
+    }
 
 }
 h1,h2,h3{
@@ -182,6 +190,7 @@ svg{
 @import 'sections/cards';
 @import 'sections/orders';
 @import 'sections/footer';
+@import 'modal';
 @import 'open-pages';
 @import 'page-title';
 @import 'total';

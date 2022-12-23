@@ -39,7 +39,7 @@ li {
   margin: 0;
 }
 
-.btn, input[type=button] {
+.btn, input[type=button], button {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -195,6 +195,35 @@ input[type=text]:placeholder-shown, input[type=password]:placeholder-shown, .sel
   background-color: #ffffff;
   color: white;
   color: #0085FF;
+}
+.btn.close {
+  width: 100%;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  color: #808080;
+  padding: 8px 0;
+  font-size: 12px;
+  font-family: "Montserrat";
+  font-weight: 900;
+  text-align: center;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.btn.close:hover {
+  width: 100%;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  color: #808080;
+  padding: 8px 0;
+  font-size: 12px;
+  font-family: "Montserrat";
+  font-weight: 900;
+  text-align: center;
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: #808080;
+  color: white;
+  color: #ffffff;
 }
 
 h1, h2, h3 {
@@ -645,6 +674,46 @@ footer .the-end p {
   text-align: center;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-container {
+  padding: 20px 10px;
+  border-radius: 10px;
+  width: 30%;
+  background-color: #ffffff;
+}
+.modal-container h1 {
+  margin-bottom: 20px;
+}
+.modal-container p {
+  margin-bottom: 20px;
+}
+.modal-container .btn, .modal-container input[type=button] {
+  padding: 10px 0;
+  width: 48%;
+}
+.modal-container .btn:hover, .modal-container input[type=button]:hover {
+  width: 48%;
+}
+.modal-container .modal-close {
+  height: fit-content;
+  cursor: pointer;
+}
+.modal-container .modal-close:hover {
+  color: #FF3D00;
+  transition: 0.4s;
+}
+
 .fullpage {
   display: none;
 }
@@ -1031,6 +1100,7 @@ form.order .location label {
   width: 15px;
   height: 15px;
   border-radius: 100%;
+  background-color: #0085FF;
   transition: 0.4s;
   cursor: pointer;
 }
@@ -1099,7 +1169,6 @@ form.order .location label {
 }
 .login p {
   text-align: center;
-  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
