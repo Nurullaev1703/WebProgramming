@@ -521,6 +521,26 @@ header .container .navigate .nav-links a {
   padding-top: 48.6%;
 }
 
+.cards .sort {
+  margin-bottom: 60px;
+}
+.cards .sort .sort-container .btn {
+  width: 100%;
+  border: 1px solid #FF3D00;
+  border-radius: 5px;
+  color: #FF3D00;
+  padding: 8px 0;
+  font-size: 12px;
+  font-family: "Montserrat";
+  font-weight: 900;
+  text-align: center;
+  transition: 0.4s;
+  cursor: pointer;
+  width: 20%;
+}
+.cards .sort .sort-container .btn:hover {
+  color: #ffffff;
+}
 .cards .container {
   flex-wrap: wrap;
 }

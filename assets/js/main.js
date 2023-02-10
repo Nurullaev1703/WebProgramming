@@ -1,10 +1,25 @@
-const SortCard = () => {
-    let sortPrice = data.sort((a,b)=>{
-        return b.price - a.price;
-    });
+const SortCards = (typeSort) => {
+    const cards = [];
+    cards.push(...data);
+    switch(typeSort){
+        case 'UP':
+            cards.sort((a,b)=>{
+                return a.price - b.price;
+            });
+            break;
+        case 'DOWN':
+            cards.sort((a,b)=>{
+                return b.price - a.price;
+            });
+            break;
+        default:
+            break;
+    }
+    setCards(document.querySelector(".cards .container"),cards);
+    
 }
 
-SortCard();
+
 const navigation = (pageOpen) =>{
     
     const pages = document.querySelectorAll('.fullpage')

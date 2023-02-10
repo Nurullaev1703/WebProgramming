@@ -1,4 +1,16 @@
 .cards{
+    .sort{
+        margin-bottom: 60px;
+            .sort-container{
+                .btn{
+                    @include btn($main);
+                    width: 20%;
+                    &:hover{
+                        color: $white;
+                    }
+                }
+            }
+    }
     .container{
         flex-wrap: wrap;
     }
